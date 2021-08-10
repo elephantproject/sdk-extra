@@ -1,0 +1,50 @@
+{
+  "name": "@freeswap/sdk-extra",
+  "license": "MIT",
+  "version": "0.5.55555",
+  "description": "🛠 A specific SDK/toolkit for building applications on top of freeswap.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": "",
+  "keywords": [
+    "ethereum",
+    "bsc",
+    "harmony",
+    "freeswap",
+    "elephantproject"
+  ],
+  "module": "dist/sdk.esm.js",
+  "scripts": {
+    "lint": "tsdx lint src test",
+    "build": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test",
+    "prepublishOnly": "tsdx build"
+  },
+  "dependencies": {
+    "@ethersproject/address": "^5.3.0",
+    "@ethersproject/contracts": "^5.3.0",
+    "@ethersproject/providers": "^5.3.0",
+    "@ethersproject/solidity": "^5.3.0",
+    "@types/lodash.random": "^3.2.6",
+    "@venomswap/community-token-list": "^2.1.0",
+    "@freeswap/default-token-list": "^1.0.0",
+    "@freeswap/sdk": "^0.1.55555",
+    "lodash.random": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "tsdx": "^0.14.1"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true
+  }
+}
