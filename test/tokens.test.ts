@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@freeswap/sdk'
+import { ChainId, Token } from '@elephantdefi/sdk'
 import { Tokens, TOKENS } from '../src/'
 
 describe('Tokens', () => {

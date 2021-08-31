@@ -1,4 +1,4 @@
-import { ChainId, Currency, HARMONY } from '@freeswap/sdk'
+import { ChainId, Currency, HARMONY } from '@elephantdefi/sdk'
 import { Blockchain, BLOCKCHAIN_SETTINGS } from '../src'
 
 describe('BlockchainSettings', () => {

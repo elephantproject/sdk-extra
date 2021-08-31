@@ -1,6 +1,6 @@
-import DEFAULT_TOKEN_LIST from '@freeswap/default-token-list'
-import COMMUNITY_TOKEN_LIST from '@venomswap/community-token-list'
-import { ChainId, Token } from '@freeswap/sdk'
+import DEFAULT_TOKEN_LIST from '@elephantdefi/default-token-list'
+import COMMUNITY_TOKEN_LIST from '@elephantdefi/community-token-list'
+import { ChainId, Token } from '@elephantdefi/sdk'
 
 export interface TokenListToken {
   chainId: number
