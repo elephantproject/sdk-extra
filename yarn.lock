@@ -922,26 +922,26 @@
   resolved "https://registry.yarnpkg.com/@elephantdefi/community-token-list/-/community-token-list-1.0.4.tgz#3426f9993dba8b2f8df5f9ba340ae1e83f0a971a"
   integrity sha512-T+5EhoguKP3wwzyjAV9qJT2gtKnUlrDlogqjJ1bV2ZZ4C5biB+y1N1wfvM/NIjeTkjFoS5k4HksVdesyyArgPQ==
 
-"@elephantdefi/core@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@elephantdefi/core/-/core-1.0.2.tgz#aa1db7d9c338b5c19e28ee79d3d146657cf94ccc"
-  integrity sha512-XyyTairaCAH7OL+9/laJyOelZkDNBEdBc72hajIz3exw1uXL9h5WLpEpZDdcS+Rq2gWRh+wvjJ9FtPnynjGzxg==
+"@elephantdefi/core@1.5.6":
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/@elephantdefi/core/-/core-1.5.6.tgz#ecdbe32d7442c89583e2d4987507f883c3023812"
+  integrity sha512-GOk37Mrn4+99//7X5sUF1/8gfvKyfZQC3GSgpCzV+j5T+tsaRhNfgV19zN+Ry8ISzPoddtCMyRyeYD/EdP7JRg==
   dependencies:
     "@harmony-js/core" "^0.1.57"
     dotenv "^10.0.0"
     tslib "^2.3.0"
 
-"@elephantdefi/default-token-list@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@elephantdefi/default-token-list/-/default-token-list-1.0.4.tgz#57e5070669b9f50f54d6daeb9d12b9b9429b0ae7"
-  integrity sha512-zsKOVVii24QNx5EEfBDVAZg1W/vXiNGvtutNUcREzVVIXgXt+9w+xFDO9tZ6XjZNhplrKjLJcJWILJDYZ4fl8Q==
+"@elephantdefi/default-token-list@^1.5.9":
+  version "1.5.9"
+  resolved "https://registry.yarnpkg.com/@elephantdefi/default-token-list/-/default-token-list-1.5.9.tgz#9496336b5dd29370ee396c61449c43e9c11e0ca7"
+  integrity sha512-GZpd+79mxmmhX0zl3YLl55mzW9qt0HO4ObqxaC22ELLITwCixUryO/bgVWi9nn75ofXRBGRiIfYkK7otGy0YiQ==
 
-"@elephantdefi/sdk@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@elephantdefi/sdk/-/sdk-1.0.2.tgz#8f75907a5f21ad45a09260ba301f78ab1e328090"
-  integrity sha512-47y3GUx3GuQCRz/45j6mkdYU8OuSaOYKh5URygZzRalBxf+4GDJH+0lh7ryfyG7PdIwAzsiu918CAq8gemnl7w==
+"@elephantdefi/sdk@^1.5.7":
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/@elephantdefi/sdk/-/sdk-1.5.7.tgz#5c6aafb06aeb9f8b4e57581db0a5db16299f3ce5"
+  integrity sha512-VimFdSbMgETHfa4bu46ojCl4AstBMkBAYxEKlzwkoqQpfXQ8VIwICv5ipVzQu/uAnMmU1Qs38zUU4VBBDgmsaQ==
   dependencies:
-    "@elephantdefi/core" "1.0.2"
+    "@elephantdefi/core" "1.5.6"
     big.js "^5.2.2"
     decimal.js-light "^2.5.0"
     jsbi "^3.1.5"

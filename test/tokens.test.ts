@@ -31,7 +31,7 @@ describe('Tokens', () => {
     })
 
     it('can correctly find all tokens matching a specific symbol', () => {
-      const busdTokens = new Tokens().bySymbol('BUSD')
+      const busdTokens = new Tokens().bySymbol('')
       expect(busdTokens).toBeInstanceOf(Array)
       expect(busdTokens).toHaveLength(3)
     })
