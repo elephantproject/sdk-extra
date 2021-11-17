@@ -1,4 +1,4 @@
-import { ChainId, Currency, HARMONY } from '@elephantdefi/sdk'
+import { ChainId, Currency, HARMONY } from 'elephantdexsdk'
 import { Blockchain, BLOCKCHAIN_SETTINGS } from '../src'
 
 describe('BlockchainSettings', () => {

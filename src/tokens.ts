@@ -1,6 +1,6 @@
-import DEFAULT_TOKEN_LIST from '@elephantdefi/default-token-list'
-import COMMUNITY_TOKEN_LIST from '@elephantdefi/community-token-list'
-import { ChainId, Token } from '@elephantdefi/sdk'
+import DEFAULT_TOKEN_LIST from 'elephantdexdefault-token-list'
+import COMMUNITY_TOKEN_LIST from 'elephantdexcommunity-token-list'
+import { ChainId, Token } from 'elephantdexsdk'
 
 export interface TokenListToken {
   chainId: number

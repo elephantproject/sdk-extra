@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@elephantdefi/sdk'
+import { ChainId, Token } from 'elephantdexsdk'
 import { Tokens, TOKENS } from '../src/'
 
 describe('Tokens', () => {

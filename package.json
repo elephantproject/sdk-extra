@@ -1,8 +1,8 @@
 {
-  "name": "@elephantdefi/sdk-extra",
+  "name": "elephantdexsdk-extra",
   "license": "MIT",
-  "version": "1.7.1",
-  "description": "🛠 A specific SDK/toolkit for building applications on top of the Elephant Protocol.",
+  "version": "2.0.2",
+  "description": "🛠 A specific SDK/toolkit for building applications on top of the Elephant Dex.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -30,9 +30,9 @@
     "@ethersproject/providers": "^5.3.0",
     "@ethersproject/solidity": "^5.3.0",
     "@types/lodash.random": "^3.2.6",
-    "@elephantdefi/community-token-list": "1.0.4",
-    "@elephantdefi/default-token-list": "^1.7.1",
-    "@elephantdefi/sdk": "^1.5.7",
+    "elephantdexcommunity-token-list": "2.0.2",
+    "elephantdexdefault-token-list": "^2.0.2",
+    "elephantdexsdk": "^2.0.2",
     "lodash.random": "^3.2.0"
   },
   "devDependencies": {

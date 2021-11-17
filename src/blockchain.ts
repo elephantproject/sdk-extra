@@ -1,4 +1,4 @@
-import { ChainId, Currency, ETHER, HARMONY, BINANCE_COIN } from '@elephantdefi/sdk'
+import { ChainId, Currency, ETHER, HARMONY, BINANCE_COIN } from 'elephantdexsdk'
 import random from 'lodash.random'
 
 /**
