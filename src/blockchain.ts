@@ -7,7 +7,7 @@ import random from 'lodash.random'
 export enum Blockchain {
   ETHEREUM = 1,
   BINANCE_SMART_CHAIN = 2,
-  HARMONY = 3
+  HARMONY = 3,
 }
 
 /**
@@ -22,8 +22,16 @@ export class BlockchainSettings {
   explorerURL?: string
   blockTime?: number
   currency?: Currency
-  
-  constructor(chainId: ChainId, blockchain?: Blockchain, name?: string, rpcURLs?: string[], rpcAPIKey?: string, explorerURL?: string, blockTime?: number) {
+
+  constructor(
+    chainId: ChainId,
+    blockchain?: Blockchain,
+    name?: string,
+    rpcURLs?: string[],
+    rpcAPIKey?: string,
+    explorerURL?: string,
+    blockTime?: number
+  ) {
     this.chainId = chainId
     this.rpcAPIKey = rpcAPIKey
 
@@ -43,11 +51,11 @@ export class BlockchainSettings {
         case 56:
         case 97:
           this.blockchain = Blockchain.BINANCE_SMART_CHAIN
-        break
+          break
         case 1666600000:
         case 1666700000:
           this.blockchain = Blockchain.HARMONY
-        break
+          break
         default:
           this.blockchain = Blockchain.ETHEREUM
       }
@@ -80,6 +88,12 @@ export class BlockchainSettings {
         case 97:
           this.name = 'Binance Smart Chain Testnet'
           break
+        case 43113:
+          this.name = 'Avalanche Fujitest'
+          break
+        case 43114:
+          this.name = 'Avalanche C-Chain'
+          break
         case 1666600000:
           this.name = 'Harmony Mainnet'
           break
@@ -92,25 +106,40 @@ export class BlockchainSettings {
     }
   }
 
-  setRpcURLs(rpcURLs?: string[]){
+  setRpcURLs(rpcURLs?: string[]) {
     if (rpcURLs && rpcURLs.length > 0) {
       this.rpcURLs = rpcURLs
     } else {
       switch (this.chainId) {
         case 1:
-          this.rpcURLs = this.rpcAPIKey && this.rpcAPIKey !== '' ?  [`https://mainnet.infura.io/v3/${this.rpcAPIKey}`] : ['https://mainnet.infura.io/v3/']
+          this.rpcURLs =
+            this.rpcAPIKey && this.rpcAPIKey !== ''
+              ? [`https://mainnet.infura.io/v3/${this.rpcAPIKey}`]
+              : ['https://mainnet.infura.io/v3/']
           break
         case 3:
-          this.rpcURLs = this.rpcAPIKey && this.rpcAPIKey !== '' ?  [`https://ropsten.infura.io/v3/${this.rpcAPIKey}`] : ['https://ropsten.infura.io/v3/']
+          this.rpcURLs =
+            this.rpcAPIKey && this.rpcAPIKey !== ''
+              ? [`https://ropsten.infura.io/v3/${this.rpcAPIKey}`]
+              : ['https://ropsten.infura.io/v3/']
           break
         case 4:
-          this.rpcURLs = this.rpcAPIKey && this.rpcAPIKey !== '' ?  [`https://rinkeby.infura.io/v3/${this.rpcAPIKey}`] : ['https://rinkeby.infura.io/v3/']
+          this.rpcURLs =
+            this.rpcAPIKey && this.rpcAPIKey !== ''
+              ? [`https://rinkeby.infura.io/v3/${this.rpcAPIKey}`]
+              : ['https://rinkeby.infura.io/v3/']
           break
         case 5:
-          this.rpcURLs = this.rpcAPIKey && this.rpcAPIKey !== '' ?  [`https://goerli.infura.io/v3/${this.rpcAPIKey}`] : ['https://goerli.infura.io/v3/']
+          this.rpcURLs =
+            this.rpcAPIKey && this.rpcAPIKey !== ''
+              ? [`https://goerli.infura.io/v3/${this.rpcAPIKey}`]
+              : ['https://goerli.infura.io/v3/']
           break
         case 42:
-          this.rpcURLs = this.rpcAPIKey && this.rpcAPIKey !== '' ?  [`https://kovan.infura.io/v3/${this.rpcAPIKey}`] : ['https://kovan.infura.io/v3/']
+          this.rpcURLs =
+            this.rpcAPIKey && this.rpcAPIKey !== ''
+              ? [`https://kovan.infura.io/v3/${this.rpcAPIKey}`]
+              : ['https://kovan.infura.io/v3/']
           break
         case 56:
           this.rpcURLs = [
@@ -127,22 +156,21 @@ export class BlockchainSettings {
           ]
           break
         case 1666600000:
-          this.rpcURLs = [
-            'https://api.s0.t.hmny.io/',
-            'https://api.harmony.one/',
-            'https://a.api.s0.t.hmny.io/'
-          ]
+          this.rpcURLs = ['https://api.s0.t.hmny.io/', 'https://api.harmony.one/', 'https://a.api.s0.t.hmny.io/']
           break
         case 1666700000:
           this.rpcURLs = ['https://api.s0.b.hmny.io/']
           break
         default:
-          this.rpcURLs = this.rpcAPIKey && this.rpcAPIKey !== '' ? [`https://mainnet.infura.io/v3/${this.rpcAPIKey}`] : ['https://mainnet.infura.io/v3/']
+          this.rpcURLs =
+            this.rpcAPIKey && this.rpcAPIKey !== ''
+              ? [`https://mainnet.infura.io/v3/${this.rpcAPIKey}`]
+              : ['https://mainnet.infura.io/v3/']
       }
     }
   }
 
-  setExplorerURL(explorerURL?: string){
+  setExplorerURL(explorerURL?: string) {
     if (explorerURL && explorerURL !== '') {
       this.explorerURL = explorerURL
     } else {
@@ -234,5 +262,5 @@ export const BLOCKCHAIN_SETTINGS: { [chainId in ChainId]: BlockchainSettings } =
   [ChainId.BSC_MAINNET]: new BlockchainSettings(ChainId.BSC_MAINNET),
   [ChainId.BSC_TESTNET]: new BlockchainSettings(ChainId.BSC_TESTNET),
   [ChainId.HARMONY_MAINNET]: new BlockchainSettings(ChainId.HARMONY_MAINNET),
-  [ChainId.HARMONY_TESTNET]: new BlockchainSettings(ChainId.HARMONY_TESTNET),
+  [ChainId.HARMONY_TESTNET]: new BlockchainSettings(ChainId.HARMONY_TESTNET)
 }

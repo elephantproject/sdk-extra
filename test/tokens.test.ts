@@ -47,11 +47,11 @@ describe('Tokens', () => {
       const tokens = new Tokens(ChainId.HARMONY_MAINNET).tokens
       const token = tokens?.[0]
       expect(token).toBeInstanceOf(Token)
-      expect(token?.name).toEqual('1INCH Token')
-      expect(token?.symbol).toEqual('11INCH')
+      expect(token?.name).toEqual('Aave Token')
+      expect(token?.symbol).toEqual('1AAVE')
       expect(token?.decimals).toEqual(18)
       expect(token?.chainId).toEqual(ChainId.HARMONY_MAINNET)
-      expect(token?.address).toEqual('0x58f1b044d8308812881a1433d9Bbeff99975e70C')
+      expect(token?.address).toEqual('0x8fD86715C0939138ff8D268B3fbF23043856a52e')
     })
   
     it('can correctly find a token by its symbol', () => {
