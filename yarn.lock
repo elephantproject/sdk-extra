@@ -2855,10 +2855,10 @@ elephantdexcore@2.0.1:
     dotenv "^10.0.0"
     tslib "^2.3.0"
 
-elephantdexdefault-token-list@9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/elephantdexdefault-token-list/-/elephantdexdefault-token-list-9.0.0.tgz#4c3fc56cfe3982599cf7915299c63835bf5b9e9c"
-  integrity sha512-XViRUv3LwTXQvvztWL0/8nsHNUy8M8exa1EokiEL/tkLFb+JoeDR9/XELnQO1gKKkIVlwqpBym0uJZg5T6jzhQ==
+elephantdexdefault-token-list@10.1.1:
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/elephantdexdefault-token-list/-/elephantdexdefault-token-list-10.1.1.tgz#a6bd05fec9e9af1802fa26f3d62589a0eb79a57a"
+  integrity sha512-p5KXcMOOTjUTGMZcHod1jlw6ZJbe688Gw57dV52kYalM0WZOzFLChPUiOY4MyBHON/Qf+wlKxL7OnELS3JlWSw==
 
 elephantdexsdk@^2.0.2:
   version "2.0.2"
